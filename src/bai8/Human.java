@@ -1,6 +1,12 @@
 package bai8;
 
-public class Human {
+import java.io.Serializable;
+
+public class Human implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String name;
 	private int age;
 
@@ -8,6 +14,14 @@ public class Human {
 		super();
 		this.name = name;
 		this.age = age;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public int getAge() {
